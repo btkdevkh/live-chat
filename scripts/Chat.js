@@ -35,10 +35,11 @@ export default class Chat {
 
   updateName(username) {
     this.username = username;
+    localStorage.setItem('username', username);
   }
 
   updateRoot(room) {
     this.room = room;
-    this.unsub ?? this.unsub();
+    if(this.unsub) this.unsub();
   }
 }

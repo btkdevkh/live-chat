@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 * {
   margin: 0;
@@ -13,24 +14,29 @@ body {
 
 .container {
   max-width: 940px;
-  margin: 0 auto;
+  margin: 10px auto;
   padding: 0 10px;
   text-align: center;
 }
 
 hr {
   margin-bottom: 15px;
+  border: none;
+  height: 1px;
+  background-color: #71a4d4;
 }
 
 h1 {     
   text-align: center;
   color: white;
-  background-color: crimson
-   ;
+  background-color: #1a75c5;
+  padding: 7px;
+  font-family: 'Great Vibes', cursive;
 }
 
 h2 {
   padding: 15px;
+  color: #333333;
 }
 
 .chatrooms {
@@ -49,7 +55,7 @@ button {
   font-family: inherit;
   padding: 10px;
   color: white;
-  background-color: #ae00ff;
+  background-color: #71a4d4;
   cursor: pointer;
   font-weight: 700;
 }
@@ -58,8 +64,12 @@ button {
 .conversations__descriptions {
   padding: 15px;
   text-align: left;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   background-color: #ddd;
+}
+
+.conversations__descriptions:last-child {
+  margin-bottom: 15px;
 }
 
 .conversations__descriptions div {
@@ -91,4 +101,12 @@ input {
 
 input:focus {
   outline: 0;
+}
+
+.upd__name {
+  text-align: left;
+}
+
+.upd__name p {
+  margin-bottom: 5px;
 }

@@ -4,23 +4,23 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
   <link rel="stylesheet" href="style.css">
   <title>Live Chat</title>
 </head>
 <body>
-
-  <h1>Live Chat</h1>
+  <h1><i class="fa-solid fa-comment-dots"></i> Live Chat</h1>
   <div class="container">
+
+    <h2><i class="fa-solid fa-person-booth"></i> Chat Rooms</h2>
+    <hr>
     
     <!-- Chat Rooms -->
     <div class="chatrooms">
-      <h2>Chat Rooms</h2>
-      <hr>
-
       <div class="buttons">
-        <button>#General</button>
-        <button>#Music</button>
-        <button>#Gaming</button>
+        <button id="general"><i id="general" class="fa-solid fa-handshake"></i> General</button>
+        <button id="music"><i id="music" class="fa-solid fa-music"></i> Music</button>
+        <button id="gaming"><i id="gaming" class="fa-solid fa-gamepad"></i> Gaming</button>
       </div>
     </div>
 
@@ -32,17 +32,20 @@
     <form class="chat">
       <div class="messages__form">
         <input type="text" name="message" placeholder="Message" />
-        <button type="submit">Submit</button>
+        <button type="submit">SUBMIT</button>
       </div>
     </form>
 
-    <!-- Update Form -->
-    <form>
+    <!-- Update Name Form -->
+    <form class="upd__name">
+      <p><small>By default your name is <strong>Anonymous</strong></small></p>
       <div class="messages__form">
-        <input type="text" placeholder="Update name" />
-        <button>Update</button>
+        <input type="text" name="username" placeholder="Update Name" />
+        <button type="submit">UPDATE</button>
       </div>
     </form>
+
+    <div class="upd__message"></div>
 
   </div>
 

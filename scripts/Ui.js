@@ -3,6 +3,10 @@ export default class Ui {
     this.html = html;
   }
 
+  clear() {
+    this.html.innerHTML = '';
+  }
+
   render(data) {
     const html = `
       <div class="conversations__descriptions">
